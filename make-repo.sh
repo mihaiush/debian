@@ -29,19 +29,13 @@ for P in $(find dists -mindepth 3 -maxdepth 3 -type d) ; do
     echo " ---   dist $DIST"
     echo " ---   packages"
     dpkg-scanpackages $P >$P/Packages
-    R=$P/Release
-    echo " ---   release $R"
-    echo "Suite: $DIST" >$R
-    echo "Components: main" >>$R
-    echo "Architectures: all" >>$R
-    echo "Date: $DATE" >>$R
     I="dists/$DIST/InRelease"
     echo " ---   in-release $I"
-    cp $R $I
+    echo "Suite: $DIST" >$I
+    echo "Components: main" >>$I
+    echo "Architectures: all" >>$I
+    echo "Date: $DATE" >>$I
     echo "SHA256:" >>$I
-    S=$(stat -c'%s' $R)
-    H=$(sha256sum $R | awk '{print $1}')
-    echo " $H $S main/binary-all/Release" >>$I
     S=$(stat -c'%s' $P/Packages)
     H=$(sha256sum $P/Packages | awk '{print $1}')
     echo " $H $S main/binary-all/Packages" >>$I
