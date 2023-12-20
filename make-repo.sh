@@ -16,8 +16,8 @@ echo
 echo " --- Distributions"
 
 echo " ---   check folder structure"
-if find dists -mindepth 3 -maxdepth 3 -type d | grep -v '/main/binary-all' ; then
-    echo ' ---   only main/all suported'
+if find dists -mindepth 3 -maxdepth 3 -type d | grep -v '/main/binary-amd64' ; then
+    echo ' ---   only main/amd64 suported'
     exit 1
 else
     echo " ---   ok"
@@ -33,12 +33,12 @@ for P in $(find dists -mindepth 3 -maxdepth 3 -type d) ; do
     echo " ---   in-release $I"
     echo "Suite: $DIST" >$I
     echo "Components: main" >>$I
-    echo "Architectures: all" >>$I
+    echo "Architectures: amd64" >>$I
     echo "Date: $DATE" >>$I
     echo "SHA256:" >>$I
     S=$(stat -c'%s' $P/Packages)
     H=$(sha256sum $P/Packages | awk '{print $1}')
-    echo " $H $S main/binary-all/Packages" >>$I
+    echo " $H $S main/binary-amd64/Packages" >>$I
 done
 
 
