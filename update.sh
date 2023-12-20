@@ -11,6 +11,7 @@ fi
 
 git pull
 
+mkdir -p dists/$DIST/main/binary-all
 ls -1 $1/*.deb | while read D ; do
     P=$(basename $D|awk -F'_' '{print $1}')
     rm -fv dists/$DIST/main/binary-all/${P}_*
@@ -20,6 +21,6 @@ done
 ./make-repo.sh
 
 git add .
-git commit -a -m "Update from ${1}"
+git commit -a -m "Update $SRC"
 git push
 
