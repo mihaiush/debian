@@ -9,7 +9,7 @@ find dists -name 'Packages*' -type f -print -delete
 echo
 
 echo " --- Delete old releases"
-find dists -name '*Release*' -type f -print -delete
+find dists -name '*Release*' -print -delete
 echo
 
 
@@ -38,8 +38,10 @@ for P in $(find dists -mindepth 3 -maxdepth 3 -type d) ; do
     echo "SHA256:" >>$I
     S=$(stat -c'%s' $P/Packages)
     H=$(sha256sum $P/Packages | awk '{print $1}')
-    echo " $H $S main/binary-all/Packages" >>$I
-    cp $I dists/$DIST/Release
+    echo " $H $S main/binary-all/Packages" >>$I 
+    cd $(dirname $I)
+    ln -s InRelease Release
+    cd -
 done
 
 
