@@ -1,3 +1,56 @@
+Package: bluez-alsa-utils
+Source: bluez-alsa
+Version: 4.1.1-1.1
+Architecture: amd64
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 329
+Depends: libasound2 (>= 1.0.16), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14), libfdk-aac2 (>= 2.0.1), libglib2.0-0 (>= 2.77.0), libldacbt-abr2 (>= 2.0.2), libldacbt-enc2 (>= 2.0.2), libopenaptx0 (>= 0.2.0), libsbc1 (>= 2.0), libasound2-plugin-bluez
+Filename: dists/testing/main/binary-all/bluez-alsa-utils_4.1.1-1.1_amd64.deb
+Size: 109228
+MD5sum: 1dae878b342c72966196bf85e1a1c0bf
+SHA1: cd42715b2fa886a2bdd66c0674a38430be24a3d7
+SHA256: 305a1889c9d33c3ec88c7adf9c2374c5dcd50b5f82ac9d46691e06a1a0da8ced
+Section: utils
+Priority: optional
+Homepage: https://github.com/Arkq/bluez-alsa
+Description: Bluetooth Audio ALSA Backend (utils)
+ Bluetooth Audio ALSA Backend allow bluetooth audio without PulseAudio.
+ .
+ This project is a rebirth of a direct integration between Bluez and ALSA.
+ Since Bluez >= 5, the build-in integration has been removed in favor of 3rd
+ party audio applications. From now on, Bluez acts as a middleware between an
+ audio application, which implements Bluetooth audio profile, and a Bluetooth
+ audio device.
+ .
+ This package contains files that is tool using bluez-alsa plugin.
+
+Package: libasound2-plugin-bluez
+Source: bluez-alsa
+Version: 4.1.1-1.1
+Architecture: amd64
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 140
+Depends: libasound2 (>= 1.1.6), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14)
+Filename: dists/testing/main/binary-all/libasound2-plugin-bluez_4.1.1-1.1_amd64.deb
+Size: 46916
+MD5sum: a6a70fafa41198e2f0bdc6ed1df9f6a7
+SHA1: 2efcf1419ee14c1c9a526dcce7f3b53b1e902c16
+SHA256: 68463a0946d2373a7fe85b35828a4e427d9c375815766c06930fc164583b50b2
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/Arkq/bluez-alsa
+Description: Bluetooth Audio ALSA Backend (plugins)
+ Bluetooth Audio ALSA Backend allow bluetooth audio without PulseAudio.
+ .
+ This project is a rebirth of a direct integration between Bluez and ALSA.
+ Since Bluez >= 5, the build-in integration has been removed in favor of 3rd
+ party audio applications. From now on, Bluez acts as a middleware between an
+ audio application, which implements Bluetooth audio profile, and a Bluetooth
+ audio device.
+ .
+ This package contains bluez plugin for ALSA plugin.
+
 Package: transmission
 Version: 3.00-2.1+deb12u1.1
 Architecture: all
