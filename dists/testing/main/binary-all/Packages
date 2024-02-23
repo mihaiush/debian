@@ -1,78 +1,146 @@
-Package: bluez-alsa-utils
-Source: bluez-alsa
-Version: 4.1.1-1.1
-Architecture: amd64
-Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
-Installed-Size: 329
-Depends: libasound2 (>= 1.0.16), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14), libfdk-aac2 (>= 2.0.1), libglib2.0-0 (>= 2.77.0), libldacbt-abr2 (>= 2.0.2), libldacbt-enc2 (>= 2.0.2), libopenaptx0 (>= 0.2.0), libsbc1 (>= 2.0), libasound2-plugin-bluez
-Filename: dists/testing/main/binary-all/bluez-alsa-utils_4.1.1-1.1_amd64.deb
-Size: 109260
-MD5sum: e2c879842a6a4c063289af73d15f1fd3
-SHA1: cb3c4b2025edb9d6d6e8dd423ecdccb2f2558b13
-SHA256: 81e02d22caacf0316564102a864b4acf8419a7f0b362c7cc18b1cfad5d744364
-Section: utils
+Package: transmission
+Version: 3.00-2.1+deb12u1.1
+Architecture: all
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 9
+Depends: transmission-common (>= 3.00-2.1+deb12u1.1), transmission-gtk (>= 3.00-2.1+deb12u1.1) | transmission-qt (>= 3.00-2.1+deb12u1.1) | transmission-cli (>= 3.00-2.1+deb12u1.1)
+Filename: dists/testing/main/binary-all/transmission_3.00-2.1+deb12u1.1_all.deb
+Size: 1248
+MD5sum: f0d48d0d6056c177ee919f1585b6f5c4
+SHA1: eccd4fe73e07f2169dd8af38c532931c45a20e5a
+SHA256: 7e2115c34940a1a4b201bef9e5908592c78cd214e02eecfc279e67c3035a531c
+Section: net
 Priority: optional
-Homepage: https://github.com/Arkq/bluez-alsa
-Description: Bluetooth Audio ALSA Backend (utils)
- Bluetooth Audio ALSA Backend allow bluetooth audio without PulseAudio.
+Homepage: https://transmissionbt.com/
+Description: lightweight BitTorrent client
+ Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
+ and daemon form). All its incarnations feature a very simple, intuitive
+ interface on top on an efficient, cross-platform back-end.
  .
- This project is a rebirth of a direct integration between Bluez and ALSA.
- Since Bluez >= 5, the build-in integration has been removed in favor of 3rd
- party audio applications. From now on, Bluez acts as a middleware between an
- audio application, which implements Bluetooth audio profile, and a Bluetooth
- audio device.
- .
- This package contains files that is tool using bluez-alsa plugin.
+ This is just a metapackage depending on one of the front-end
+ alternatives
 
-Package: ffmpegfs
-Version: 2.14-1.1
+Package: transmission-cli
+Source: transmission
+Version: 3.00-2.1+deb12u1.1
 Architecture: amd64
-Maintainer: Norbert Schlia <nschlia@oblivion-software.de>
-Installed-Size: 1409
-Depends: libavcodec60 (>= 7:6.0), libavfilter9 (>= 7:6.0), libavformat60 (>= 7:6.0), libavutil58 (>= 7:6.0), libbluray2 (>= 1:0.5.0), libc6 (>= 2.34), libchardet1, libcue2, libdvdread8 (>= 4.1.3), libfuse2 (>= 2.6), libgcc-s1 (>= 3.0), libsqlite3-0 (>= 3.14.0), libstdc++6 (>= 13.1), libswresample4 (>= 7:6.0), libswscale7 (>= 7:6.0)
-Filename: dists/testing/main/binary-all/ffmpegfs_2.14-1.1_amd64.deb
-Size: 464344
-MD5sum: 6aef9d378134c43173447e8fb341641e
-SHA1: d903b323b872cbfa90c1da47354f572770b9bf91
-SHA256: e4e0e18ce031710034a2ded710ea4d90df1180184caf266adeab5f6a1c47619c
-Section: utils
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 2759
+Depends: transmission-common (= 3.00-2.1+deb12u1.1), libc6 (>= 2.34), libcurl4 (>= 7.18.0), libevent-2.1-7 (>= 2.1.8-stable), libminiupnpc17 (>= 1.9.20140610), libnatpmp1 (>= 20150609), libssl3 (>= 3.0.0), zlib1g (>= 1:1.1.4)
+Suggests: transmission-daemon (= 3.00-2.1+deb12u1.1), transmission-gtk (= 3.00-2.1+deb12u1.1)
+Breaks: transmission-daemon (<< 1.50-1)
+Replaces: transmission-daemon (<< 1.50-1)
+Filename: dists/testing/main/binary-all/transmission-cli_3.00-2.1+deb12u1.1_amd64.deb
+Size: 436284
+MD5sum: 6b9c9a8f35b75b07ba8af546d7b43c6a
+SHA1: b1c7e0c39c7800434396b20c3216a0c8c020638e
+SHA256: 237f8245f57ba06cd95d5c437c3bace347e9f8d4becfc489d506fae24938e933
+Section: net
 Priority: optional
-Multi-Arch: foreign
-Homepage: https://nschlia.github.io/ffmpegfs/
-Description: Fuse Multi Media Filesystem
- A read-only FUSE filesystem which transcodes various audio and video formats
- to MP4, WebM, and many more on the fly when opened and read using the FFmpeg
- library, thus supporting a multitude of input formats and a variety of
- common output formats.
+Homepage: https://transmissionbt.com/
+Description: lightweight BitTorrent client (command line programs)
+ Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
+ and daemon form). All its incarnations feature a very simple, intuitive
+ interface on top on an efficient, cross-platform back-end.
  .
- This allows access to a multi-media file collection with software and/or
- hardware which only understands one of the supported output formats, or
- transcodes files through simple drag-and-drop in a file browser.
+ This package contains a (deprecated) stand-alone command-line client,
+ transmission-remote to interface with transmission-daemon and tools to
+ create, edit and inspect torrent files.
 
-Package: libasound2-plugin-bluez
-Source: bluez-alsa
-Version: 4.1.1-1.1
-Architecture: amd64
-Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
-Installed-Size: 140
-Depends: libasound2 (>= 1.1.6), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14)
-Filename: dists/testing/main/binary-all/libasound2-plugin-bluez_4.1.1-1.1_amd64.deb
-Size: 46928
-MD5sum: ee334164a16434fed3c35b07d31a8cdb
-SHA1: 3cd47704294fb1a9ecf41692d6d9d1aab64fb883
-SHA256: d4526c86b63ab58b1359024f77bbca5dbd9dbd650a14c00b03a539d725c6d493
-Section: libs
+Package: transmission-common
+Source: transmission
+Version: 3.00-2.1+deb12u1.1
+Architecture: all
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 864
+Breaks: transmission-gtk (<< 2.10-1)
+Replaces: transmission-gtk (<< 2.10-1)
+Filename: dists/testing/main/binary-all/transmission-common_3.00-2.1+deb12u1.1_all.deb
+Size: 226856
+MD5sum: cc3126513cb31384d34c2c6ff0ff5546
+SHA1: 818d8be060d4d5a98247f7028f247958398cef3e
+SHA256: f5c27ceeedaa7353fd6d8c029d54e7095c6ad0bcb5371d8d4d20504e15b0e3b9
+Section: net
 Priority: optional
-Multi-Arch: same
-Homepage: https://github.com/Arkq/bluez-alsa
-Description: Bluetooth Audio ALSA Backend (plugins)
- Bluetooth Audio ALSA Backend allow bluetooth audio without PulseAudio.
+Homepage: https://transmissionbt.com/
+Description: lightweight BitTorrent client (common files)
+ Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
+ and daemon form). All its incarnations feature a very simple, intuitive
+ interface on top on an efficient, cross-platform back-end.
  .
- This project is a rebirth of a direct integration between Bluez and ALSA.
- Since Bluez >= 5, the build-in integration has been removed in favor of 3rd
- party audio applications. From now on, Bluez acts as a middleware between an
- audio application, which implements Bluetooth audio profile, and a Bluetooth
- audio device.
+ This package contains the common files for the different transmission
+ versions.
+
+Package: transmission-daemon
+Source: transmission
+Version: 3.00-2.1+deb12u1.1
+Architecture: amd64
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 603
+Pre-Depends: adduser
+Depends: lsb-base (>= 3.0), transmission-common (= 3.00-2.1+deb12u1.1), libc6 (>= 2.34), libcurl4 (>= 7.18.0), libevent-2.1-7 (>= 2.1.8-stable), libminiupnpc17 (>= 1.9.20140610), libnatpmp1 (>= 20150609), libssl3 (>= 3.0.0), libsystemd0, zlib1g (>= 1:1.1.4)
+Recommends: transmission-cli (>= 1.50-1)
+Breaks: transmission-cli (<< 1.40-1)
+Replaces: transmission-cli (<< 1.40-1)
+Filename: dists/testing/main/binary-all/transmission-daemon_3.00-2.1+deb12u1.1_amd64.deb
+Size: 234472
+MD5sum: 858c528a793e25c7bff4b64425b69dd5
+SHA1: d781671bb657ebcbff1ab5302773d944448b0341
+SHA256: b535c9e25742fa4986ac330c61e8edbdc3357d8f821bd3df789bff314be20681
+Section: net
+Priority: optional
+Homepage: https://transmissionbt.com/
+Description: lightweight BitTorrent client (daemon)
+ Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
+ and daemon form). All its incarnations feature a very simple, intuitive
+ interface on top on an efficient, cross-platform back-end.
  .
- This package contains bluez plugin for ALSA plugin.
+ This package contains the transmission-daemon. For the associated
+ transmission-remote, see the package transmission-cli.
+
+Package: transmission-gtk
+Source: transmission
+Version: 3.00-2.1+deb12u1.1
+Architecture: amd64
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 3609
+Depends: transmission-common (= 3.00-2.1+deb12u1.1), libayatana-appindicator3-1 (>= 0.4.90), libc6 (>= 2.34), libcurl4 (>= 7.18.0), libevent-2.1-7 (>= 2.1.8-stable), libgdk-pixbuf-2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.75.3), libgtk-3-0 (>= 3.21.5), libminiupnpc17 (>= 1.9.20140610), libnatpmp1 (>= 20150609), libpango-1.0-0 (>= 1.14.0), libssl3 (>= 3.0.0), zlib1g (>= 1:1.1.4)
+Recommends: xdg-utils
+Filename: dists/testing/main/binary-all/transmission-gtk_3.00-2.1+deb12u1.1_amd64.deb
+Size: 744104
+MD5sum: ccc56dd4d3cb823a4fd5731cc0c2135a
+SHA1: a29d338ae296f360163634d97344d03b4b586f92
+SHA256: 3b7c860d82fe5ca8d23981d1bffcbd76b28ef88d8398f7d0cb90d61a63953307
+Section: net
+Priority: optional
+Homepage: https://transmissionbt.com/
+Description: lightweight BitTorrent client (GTK+ interface)
+ Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
+ and daemon form). All its incarnations feature a very simple, intuitive
+ interface on top on an efficient, cross-platform back-end.
+ .
+ This package contains the GTK+ stand-alone client.
+
+Package: transmission-qt
+Source: transmission
+Version: 3.00-2.1+deb12u1.1
+Architecture: amd64
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 2619
+Depends: transmission-common (= 3.00-2.1+deb12u1.1), libc6 (>= 2.34), libcurl4 (>= 7.18.0), libevent-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.0), libminiupnpc17 (>= 1.9.20140610), libnatpmp1 (>= 20150609), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.8.0) | libqt5gui5-gles (>= 5.8.0), libqt5network5 (>= 5.14.1), libqt5widgets5 (>= 5.11.0~rc1), libssl3 (>= 3.0.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)
+Recommends: xdg-utils
+Filename: dists/testing/main/binary-all/transmission-qt_3.00-2.1+deb12u1.1_amd64.deb
+Size: 728860
+MD5sum: 07cb94ca5b9f90cba26e807e6325437c
+SHA1: e8c62807b170a485ba42960e7bb60a02d9db00d5
+SHA256: 49730d81a243d127efa12271d68c42ed35a4ee114b11d80f41562c57e26f0447
+Section: net
+Priority: optional
+Homepage: https://transmissionbt.com/
+Description: lightweight BitTorrent client (Qt interface)
+ Transmission is a set of lightweight BitTorrent clients (in GUI, CLI
+ and daemon form). All its incarnations feature a very simple, intuitive
+ interface on top on an efficient, cross-platform back-end.
+ .
+ This package contains the Qt stand-alone client.
 
