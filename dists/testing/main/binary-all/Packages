@@ -1,15 +1,15 @@
 Package: bluez-alsa-utils
 Source: bluez-alsa
-Version: 4.1.1-1.1
+Version: 4.1.1-1.1r11
 Architecture: amd64
 Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
 Installed-Size: 329
 Depends: libasound2 (>= 1.0.16), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14), libfdk-aac2 (>= 2.0.1), libglib2.0-0 (>= 2.77.0), libldacbt-abr2 (>= 2.0.2), libldacbt-enc2 (>= 2.0.2), libopenaptx0 (>= 0.2.0), libsbc1 (>= 2.0), libasound2-plugin-bluez
-Filename: dists/testing/main/binary-all/bluez-alsa-utils_4.1.1-1.1_amd64.deb
-Size: 109328
-MD5sum: a47ccf37a7ad7b8c67fcc0e141862eaf
-SHA1: 35eadf614f34d5e3d939f43d43a97404eac3eaa8
-SHA256: f5fbed447ca0010fd784f06d9d5fdac756395213a198242a5c020187ef88ee8b
+Filename: dists/testing/main/binary-all/bluez-alsa-utils_4.1.1-1.1r11_amd64.deb
+Size: 109248
+MD5sum: 13c5aba0f35bf6852b58315619456969
+SHA1: 477014aa7ad183cc1c8e37f54bd70f443db67bef
+SHA256: 704fb156628926b27a205aca56c63b50843d2ea17c08c41629c4a7775fbcf97a
 Section: utils
 Priority: optional
 Homepage: https://github.com/Arkq/bluez-alsa
@@ -26,16 +26,16 @@ Description: Bluetooth Audio ALSA Backend (utils)
 
 Package: libasound2-plugin-bluez
 Source: bluez-alsa
-Version: 4.1.1-1.1
+Version: 4.1.1-1.1r11
 Architecture: amd64
 Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
 Installed-Size: 140
 Depends: libasound2 (>= 1.1.6), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14)
-Filename: dists/testing/main/binary-all/libasound2-plugin-bluez_4.1.1-1.1_amd64.deb
-Size: 46908
-MD5sum: fec61396c5301e62217cf70d4b4787d9
-SHA1: 4d4ef8213d2fedfd9e8126cbf284f4d85ce5ba19
-SHA256: 6f7627a264e2b34f44f61470841179849b6e3d1e99713b5b2e33aa92e5e2805f
+Filename: dists/testing/main/binary-all/libasound2-plugin-bluez_4.1.1-1.1r11_amd64.deb
+Size: 46984
+MD5sum: 9f11a82bfc55843828ec83270f67f6a5
+SHA1: 80158d1e42b34a77fc8e71d4348ce1d8532ec97e
+SHA256: 3beb2d3f9bdf14982354679213a4759347df75a0e12b2e9fab7d1e72737667c9
 Section: libs
 Priority: optional
 Multi-Arch: same
