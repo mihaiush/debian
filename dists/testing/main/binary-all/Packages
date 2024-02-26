@@ -6,10 +6,10 @@ Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
 Installed-Size: 329
 Depends: libasound2 (>= 1.0.16), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14), libfdk-aac2 (>= 2.0.1), libglib2.0-0 (>= 2.77.0), libldacbt-abr2 (>= 2.0.2), libldacbt-enc2 (>= 2.0.2), libopenaptx0 (>= 0.2.0), libsbc1 (>= 2.0), libasound2-plugin-bluez
 Filename: dists/testing/main/binary-all/bluez-alsa-utils_4.1.1-1.1_amd64.deb
-Size: 109228
-MD5sum: 1dae878b342c72966196bf85e1a1c0bf
-SHA1: cd42715b2fa886a2bdd66c0674a38430be24a3d7
-SHA256: 305a1889c9d33c3ec88c7adf9c2374c5dcd50b5f82ac9d46691e06a1a0da8ced
+Size: 109672
+MD5sum: f79cab4ef93a02fd4f9fbdb70f1b5b22
+SHA1: 56a8ff55017bde5f434532fcf4a3ce41d7939032
+SHA256: 5f7108f1f13d4b700887042b008a397e256aee15d50ec50db88b9e11bad10e54
 Section: utils
 Priority: optional
 Homepage: https://github.com/Arkq/bluez-alsa
@@ -32,10 +32,10 @@ Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
 Installed-Size: 140
 Depends: libasound2 (>= 1.1.6), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14)
 Filename: dists/testing/main/binary-all/libasound2-plugin-bluez_4.1.1-1.1_amd64.deb
-Size: 46916
-MD5sum: a6a70fafa41198e2f0bdc6ed1df9f6a7
-SHA1: 2efcf1419ee14c1c9a526dcce7f3b53b1e902c16
-SHA256: 68463a0946d2373a7fe85b35828a4e427d9c375815766c06930fc164583b50b2
+Size: 47072
+MD5sum: d60511df067b29bd21c1772c21ef55b8
+SHA1: 73691e3b152311987c1d6039b3f17056d53a2ee6
+SHA256: 783d063b46a14b0d55975ce8e08068ad8a0b3c01564e53e94093b50c8f41a895
 Section: libs
 Priority: optional
 Multi-Arch: same
