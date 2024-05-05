@@ -1,0 +1,20 @@
+Package: raspotify
+Version: 0.43.56~librespot.v0.4.2-a6e1258
+Architecture: armhf
+Maintainer: Jason Gray <jasonlevigray3@gmail.com>
+Installed-Size: 7678
+Depends: libc6 (>= 2.31), coreutils (>= 8.32), libasound2 (>= 1.2.4), alsa-utils (>= 1.2.4), libpulse0 (>= 14.2), systemd (>= 247.3), init-system-helpers (>= 1.60)
+Filename: dists/testing/main/binary-armhf/raspotify_0.43.56.librespot.v0.4.2-a6e1258_armhf.deb
+Size: 1779056
+MD5sum: 9704705dd7acc057c9353c4b12eb5f53
+SHA1: 03782c0fa8cea68f8c41c9d2b54e2e539d20d6e5
+SHA256: 691be2335e70b4b2fbe14e3ac1079cd3a731740f7717723dadadfdc405016ce1
+Section: base
+Priority: optional
+Homepage: https://github.com/dtcooper/raspotify
+Description: Raspotify
+ A Spotify Connect systemd daemon for Debian Stable based headless systems which thinly wraps a fork of librespot.
+ [Built with rustc 1.70.0]
+Vcs-Browser: https://github.com/dtcooper/raspotify
+Vcs-Git: https://github.com/dtcooper/raspotify
+

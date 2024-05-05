@@ -11,11 +11,11 @@ fi
 
 git pull
 
-mkdir -p dists/$DIST/main/binary-all
+mkdir -p dists/$DIST/main/binary-amd64
 ls -1 $1/*.deb | while read D ; do
     P=$(basename $D|awk -F'_' '{print $1}')
-    rm -fv dists/$DIST/main/binary-all/${P}_*
-    cp -v $D dists/$DIST/main/binary-all/
+    rm -fv dists/$DIST/main/binary-amd64/${P}_*
+    cp -v $D dists/$DIST/main/binary-amd64/
 done
 
 ./make-repo.sh

@@ -1,6 +1,7 @@
 Suite: testing
 Components: main
-Architectures: amd64
-Date: Sun, 05 May 2024 08:34:12 +0000
+Architectures: amd64 arhhf
+Date: Sun, 05 May 2024 08:52:42 +0000
 SHA256:
+ 451f94dd84f34302818966ed0249dfed83c1df95b0e7f4acecbf776858b71519 931 main/binary-armhf/Packages
  960f24d1c3a0a6521e338cd45db982500edeeeee5fa1999e10369c2fc0c12d3e 3368 main/binary-amd64/Packages
