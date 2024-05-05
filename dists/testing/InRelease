@@ -1,6 +1,6 @@
 Suite: testing
 Components: main
-Architectures: all
-Date: Sat, 09 Mar 2024 07:49:24 +0000
+Architectures: amd64
+Date: Sun, 05 May 2024 08:29:55 +0000
 SHA256:
- b9cd50c10df81885dfef9195b6cf7544d407fd3e10d4536daef3cf0c84ca0ef4 10314 main/binary-all/Packages
+ 927e81aa07d0c6aad3b4a53b6d58dc0a71cddc7f3f1a4b91edaf0417f399d431 10332 main/binary-amd64/Packages

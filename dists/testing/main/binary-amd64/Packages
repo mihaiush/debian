@@ -5,7 +5,7 @@ Architecture: amd64
 Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
 Installed-Size: 329
 Depends: libasound2 (>= 1.0.16), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14), libfdk-aac2 (>= 2.0.1), libglib2.0-0 (>= 2.77.0), libldacbt-abr2 (>= 2.0.2), libldacbt-enc2 (>= 2.0.2), libopenaptx0 (>= 0.2.0), libsbc1 (>= 2.0), libasound2-plugin-bluez
-Filename: dists/testing/main/binary-all/bluez-alsa-utils_4.1.1-1r21_amd64.deb
+Filename: dists/testing/main/binary-amd64/bluez-alsa-utils_4.1.1-1r21_amd64.deb
 Size: 109332
 MD5sum: 385aeb8fe825d22dc0dff36988fda2bb
 SHA1: 84ffb393ca1d9c93f4d773f1611027d9ff41524d
@@ -31,7 +31,7 @@ Architecture: amd64
 Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
 Installed-Size: 140
 Depends: libasound2 (>= 1.1.6), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14)
-Filename: dists/testing/main/binary-all/libasound2-plugin-bluez_4.1.1-1r21_amd64.deb
+Filename: dists/testing/main/binary-amd64/libasound2-plugin-bluez_4.1.1-1r21_amd64.deb
 Size: 46892
 MD5sum: a9be17c900d6f321e69566da2f73e987
 SHA1: 2934579b7c711e6d987e3f973c0a68fd169539ce
@@ -57,7 +57,7 @@ Architecture: amd64
 Maintainer: Jason Gray <jasonlevigray3@gmail.com>
 Installed-Size: 7911
 Depends: libc6 (>= 2.31), coreutils (>= 8.32), libasound2 (>= 1.2.4), alsa-utils (>= 1.2.4), libpulse0 (>= 14.2), systemd (>= 247.3), init-system-helpers (>= 1.60)
-Filename: dists/testing/main/binary-all/raspotify_0.43.56.librespot.v0.4.2-a6e1258_amd64.deb
+Filename: dists/testing/main/binary-amd64/raspotify_0.43.56.librespot.v0.4.2-a6e1258_amd64.deb
 Size: 1835984
 MD5sum: d65aee6fb111207020bf84e2a2f0bbef
 SHA1: 9b584c6c40345e988c79908b23e13d252e8b83b1
@@ -77,7 +77,7 @@ Architecture: all
 Maintainer: Sandro Tosi <morph@debian.org>
 Installed-Size: 9
 Depends: transmission-common (>= 3.00-2.1+deb12u1.1), transmission-gtk (>= 3.00-2.1+deb12u1.1) | transmission-qt (>= 3.00-2.1+deb12u1.1) | transmission-cli (>= 3.00-2.1+deb12u1.1)
-Filename: dists/testing/main/binary-all/transmission_3.00-2.1+deb12u1.1_all.deb
+Filename: dists/testing/main/binary-amd64/transmission_3.00-2.1+deb12u1.1_all.deb
 Size: 1248
 MD5sum: f0d48d0d6056c177ee919f1585b6f5c4
 SHA1: eccd4fe73e07f2169dd8af38c532931c45a20e5a
@@ -103,7 +103,7 @@ Depends: transmission-common (= 3.00-2.1+deb12u1.1), libc6 (>= 2.34), libcurl4 (
 Suggests: transmission-daemon (= 3.00-2.1+deb12u1.1), transmission-gtk (= 3.00-2.1+deb12u1.1)
 Breaks: transmission-daemon (<< 1.50-1)
 Replaces: transmission-daemon (<< 1.50-1)
-Filename: dists/testing/main/binary-all/transmission-cli_3.00-2.1+deb12u1.1_amd64.deb
+Filename: dists/testing/main/binary-amd64/transmission-cli_3.00-2.1+deb12u1.1_amd64.deb
 Size: 436284
 MD5sum: 6b9c9a8f35b75b07ba8af546d7b43c6a
 SHA1: b1c7e0c39c7800434396b20c3216a0c8c020638e
@@ -128,7 +128,7 @@ Maintainer: Sandro Tosi <morph@debian.org>
 Installed-Size: 864
 Breaks: transmission-gtk (<< 2.10-1)
 Replaces: transmission-gtk (<< 2.10-1)
-Filename: dists/testing/main/binary-all/transmission-common_3.00-2.1+deb12u1.1_all.deb
+Filename: dists/testing/main/binary-amd64/transmission-common_3.00-2.1+deb12u1.1_all.deb
 Size: 226856
 MD5sum: cc3126513cb31384d34c2c6ff0ff5546
 SHA1: 818d8be060d4d5a98247f7028f247958398cef3e
@@ -155,7 +155,7 @@ Depends: lsb-base (>= 3.0), transmission-common (= 3.00-2.1+deb12u1.1), libc6 (>
 Recommends: transmission-cli (>= 1.50-1)
 Breaks: transmission-cli (<< 1.40-1)
 Replaces: transmission-cli (<< 1.40-1)
-Filename: dists/testing/main/binary-all/transmission-daemon_3.00-2.1+deb12u1.1_amd64.deb
+Filename: dists/testing/main/binary-amd64/transmission-daemon_3.00-2.1+deb12u1.1_amd64.deb
 Size: 234472
 MD5sum: 858c528a793e25c7bff4b64425b69dd5
 SHA1: d781671bb657ebcbff1ab5302773d944448b0341
@@ -179,7 +179,7 @@ Maintainer: Sandro Tosi <morph@debian.org>
 Installed-Size: 3609
 Depends: transmission-common (= 3.00-2.1+deb12u1.1), libayatana-appindicator3-1 (>= 0.4.90), libc6 (>= 2.34), libcurl4 (>= 7.18.0), libevent-2.1-7 (>= 2.1.8-stable), libgdk-pixbuf-2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.75.3), libgtk-3-0 (>= 3.21.5), libminiupnpc17 (>= 1.9.20140610), libnatpmp1 (>= 20150609), libpango-1.0-0 (>= 1.14.0), libssl3 (>= 3.0.0), zlib1g (>= 1:1.1.4)
 Recommends: xdg-utils
-Filename: dists/testing/main/binary-all/transmission-gtk_3.00-2.1+deb12u1.1_amd64.deb
+Filename: dists/testing/main/binary-amd64/transmission-gtk_3.00-2.1+deb12u1.1_amd64.deb
 Size: 744104
 MD5sum: ccc56dd4d3cb823a4fd5731cc0c2135a
 SHA1: a29d338ae296f360163634d97344d03b4b586f92
@@ -202,7 +202,7 @@ Maintainer: Sandro Tosi <morph@debian.org>
 Installed-Size: 2619
 Depends: transmission-common (= 3.00-2.1+deb12u1.1), libc6 (>= 2.34), libcurl4 (>= 7.18.0), libevent-2.1-7 (>= 2.1.8-stable), libgcc-s1 (>= 3.0), libminiupnpc17 (>= 1.9.20140610), libnatpmp1 (>= 20150609), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.8.0) | libqt5gui5-gles (>= 5.8.0), libqt5network5 (>= 5.14.1), libqt5widgets5 (>= 5.11.0~rc1), libssl3 (>= 3.0.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)
 Recommends: xdg-utils
-Filename: dists/testing/main/binary-all/transmission-qt_3.00-2.1+deb12u1.1_amd64.deb
+Filename: dists/testing/main/binary-amd64/transmission-qt_3.00-2.1+deb12u1.1_amd64.deb
 Size: 728860
 MD5sum: 07cb94ca5b9f90cba26e807e6325437c
 SHA1: e8c62807b170a485ba42960e7bb60a02d9db00d5
